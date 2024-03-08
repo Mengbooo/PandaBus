@@ -1,0 +1,45 @@
+{
+    "status": 200,
+    "data": {
+      "routes": [
+        {
+          "id": 1,
+          "beginLocation": "校大门",
+          "endLocation": "韵苑",
+          "description": "",
+          "beginTime": "7:00",
+          "endTime": "22:00",
+          "interval": "15"
+        },
+        {
+          "id": 2,
+          "beginLocation": "韵苑",
+          "endLocation": "紫菘",
+          "description": "",
+          "beginTime": "7:00",
+          "endTime": "22:00",
+          "interval": "15"
+        },
+        {
+          "id": 3,
+          "beginLocation": "喻园",
+          "endLocation": "校大门",
+          "description": "",
+          "beginTime": "7:00",
+          "endTime": "22:00",
+          "interval": "15"
+        },
+        {
+          "id": 4,
+          "beginLocation": "主校区大循环",
+          "endLocation": "",
+          "description": "按需调整班次，整点发车",
+          "beginTime": "7:00",
+          "endTime": "22:00",
+          "interval": "15"
+        }
+      ]
+    },
+    "error": "",
+    "success": true
+  }

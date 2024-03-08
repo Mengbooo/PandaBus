@@ -1,0 +1,1089 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": 1,
+      "points": [
+        {
+          "route": [
+            1,
+            3,
+            4
+          ],
+          "name": "校大门",
+          "latitude": 30.509439,
+          "longitude": 114.412133
+        },
+        {
+          "route": null,
+          "name": "1x1",
+          "latitude": 30.509374,
+          "longitude": 114.412238
+        },
+        {
+          "route": [
+            1,
+            3
+          ],
+          "name": "图书馆",
+          "latitude": 30.512005,
+          "longitude": 114.412451
+        },
+        {
+          "route": null,
+          "name": "1x2",
+          "latitude": 30.513295,
+          "longitude": 114.412619
+        },
+        {
+          "route": null,
+          "name": "1x3",
+          "latitude": 30.513105,
+          "longitude": 114.414746
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "大活",
+          "latitude": 30.514513,
+          "longitude": 114.414904
+        },
+        {
+          "route": null,
+          "name": "1x4",
+          "latitude": 30.514905,
+          "longitude": 114.41497
+        },
+        {
+          "route": null,
+          "name": "1x5",
+          "latitude": 30.515963,
+          "longitude": 114.415096
+        },
+        {
+          "route": [
+            1,
+            2,
+            4
+          ],
+          "name": "集贸",
+          "latitude": 30.515866,
+          "longitude": 114.415844
+        },
+        {
+          "route": null,
+          "name": "1x6",
+          "latitude": 30.515737,
+          "longitude": 114.417595
+        },
+        {
+          "route": null,
+          "name": "1x7",
+          "latitude": 30.515553,
+          "longitude": 114.419479
+        },
+        {
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "喻园",
+          "latitude": 30.515367,
+          "longitude": 114.42115
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "华科大社区站",
+          "latitude": 30.51515,
+          "longitude": 114.42302
+        },
+        {
+          "route": null,
+          "name": "1x8",
+          "latitude": 30.514792,
+          "longitude": 114.426251
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "东九",
+          "latitude": 30.514675,
+          "longitude": 114.427155
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "韵苑",
+          "latitude": 30.514082,
+          "longitude": 114.432318
+        },
+        {
+          "route": null,
+          "name": "1x9",
+          "latitude": 30.513885,
+          "longitude": 114.434278
+        },
+        {
+          "route": null,
+          "name": "1x10",
+          "latitude": 30.513784,
+          "longitude": 114.435521
+        },
+        {
+          "route": [
+            1
+          ],
+          "name": "爱因斯坦广场",
+          "latitude": 30.513446,
+          "longitude": 114.435513
+        },
+        {
+          "route": null,
+          "name": "1x11",
+          "latitude": 30.512232,
+          "longitude": 114.435362
+        },
+        {
+          "route": null,
+          "name": "1x12",
+          "latitude": 30.512309,
+          "longitude": 114.434582
+        },
+        {
+          "route": [
+            1
+          ],
+          "name": "软件学院",
+          "latitude": 30.511045,
+          "longitude": 114.434443
+        },
+        {
+          "route": [
+            1
+          ],
+          "name": "生命学院",
+          "latitude": 30.510499,
+          "longitude": 114.434376
+        },
+        {
+          "route": null,
+          "name": "1x13",
+          "latitude": 30.510132,
+          "longitude": 114.434319
+        },
+        {
+          "route": null,
+          "name": "1x14",
+          "latitude": 30.509752,
+          "longitude": 114.433125
+        },
+        {
+          "route": [
+            1
+          ],
+          "name": "新国光站",
+          "latitude": 30.5080882,
+          "longitude": 114.433222
+        },
+        {
+          "route": null,
+          "name": "1x15",
+          "latitude": 30.508051,
+          "longitude": 114.433174
+        },
+        {
+          "route": null,
+          "name": "1x16",
+          "latitude": 30.507736,
+          "longitude": 114.432214
+        },
+        {
+          "route": null,
+          "name": "1x17",
+          "latitude": 30.507801,
+          "longitude": 114.431607
+        },
+        {
+          "route": [
+            1
+          ],
+          "name": "校医院（东）",
+          "latitude": 30.50858,
+          "longitude": 114.431664
+        },
+        {
+          "route": [
+            1
+          ],
+          "name": "图书馆（东）",
+          "latitude": 30.510574,
+          "longitude": 114.431912
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "韵苑（新）",
+          "latitude": 30.513522,
+          "longitude": 114.4323
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "韵苑适配点",
+          "latitude": 30.514081,
+          "longitude": 114.432317
+        }
+      ],
+      "oppositePoints": [
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "韵苑",
+          "latitude": 30.514082,
+          "longitude": 114.432318
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "东九",
+          "latitude": 30.514675,
+          "longitude": 114.427155
+        },
+        {
+          "route": null,
+          "name": "1x8",
+          "latitude": 30.514792,
+          "longitude": 114.426251
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "华科大社区站",
+          "latitude": 30.51515,
+          "longitude": 114.42302
+        },
+        {
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "喻园",
+          "latitude": 30.515367,
+          "longitude": 114.42115
+        },
+        {
+          "route": null,
+          "name": "1x7",
+          "latitude": 30.515553,
+          "longitude": 114.419479
+        },
+        {
+          "route": null,
+          "name": "1x6",
+          "latitude": 30.515737,
+          "longitude": 114.417595
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "集贸",
+          "latitude": 30.515866,
+          "longitude": 114.415844
+        },
+        {
+          "route": null,
+          "name": "1x5",
+          "latitude": 30.515963,
+          "longitude": 114.415096
+        },
+        {
+          "route": null,
+          "name": "1x4",
+          "latitude": 30.514905,
+          "longitude": 114.41497
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "大活",
+          "latitude": 30.514513,
+          "longitude": 114.414904
+        },
+        {
+          "route": null,
+          "name": "1x3",
+          "latitude": 30.513105,
+          "longitude": 114.414746
+        },
+        {
+          "route": null,
+          "name": "1x2",
+          "latitude": 30.513295,
+          "longitude": 114.412619
+        },
+        {
+          "route": [
+            1,
+            3
+          ],
+          "name": "图书馆",
+          "latitude": 30.512005,
+          "longitude": 114.412451
+        },
+        {
+          "route": null,
+          "name": "1x1",
+          "latitude": 30.509374,
+          "longitude": 114.412238
+        },
+        {
+          "route": [
+            1,
+            3,
+            4
+          ],
+          "name": "校大门",
+          "latitude": 30.509439,
+          "longitude": 114.412133
+        }
+      ],
+      "color": "#5C7CFE",
+      "parts": [
+        {
+          "isDot": true,
+          "begin": "校大门",
+          "end": "1x2"
+        },
+        {
+          "isDot": true,
+          "begin": "1x2",
+          "end": "韵苑"
+        },
+        {
+          "isDot": false,
+          "begin": "韵苑",
+          "end": "1x15"
+        },
+        {
+          "isDot": false,
+          "begin": "1x15",
+          "end": "韵苑适配点"
+        }
+      ],
+      "oppositeParts": [
+        {
+          "isDot": true,
+          "begin": "韵苑",
+          "end": "1x2"
+        },
+        {
+          "isDot": true,
+          "begin": "1x2",
+          "end": "校大门"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "points": [
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "韵苑",
+          "latitude": 30.514082,
+          "longitude": 114.432318
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "东九",
+          "latitude": 30.514675,
+          "longitude": 114.427155
+        },
+        {
+          "route": null,
+          "name": "1x8",
+          "latitude": 30.514792,
+          "longitude": 114.426251
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "华科大社区站",
+          "latitude": 30.51515,
+          "longitude": 114.42302
+        },
+        {
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "喻园",
+          "latitude": 30.515367,
+          "longitude": 114.42115
+        },
+        {
+          "route": null,
+          "name": "1x7",
+          "latitude": 30.515553,
+          "longitude": 114.419479
+        },
+        {
+          "route": null,
+          "name": "2x1",
+          "latitude": 30.514471,
+          "longitude": 114.419377
+        },
+        {
+          "route": null,
+          "name": "2x2",
+          "latitude": 30.512638,
+          "longitude": 114.419149
+        },
+        {
+          "route": [
+            2
+          ],
+          "name": "机械大楼",
+          "latitude": 30.512823621961804,
+          "longitude": 114.41752902560764
+        },
+        {
+          "route": null,
+          "name": "1x3",
+          "latitude": 30.513105,
+          "longitude": 114.414746
+        },
+        {
+          "route": null,
+          "name": "1x2",
+          "latitude": 30.513295,
+          "longitude": 114.412619
+        },
+        {
+          "route": [
+            2,
+            3
+          ],
+          "name": "科技楼",
+          "latitude": 30.513319227430557,
+          "longitude": 114.41211371527778
+        },
+        {
+          "route": null,
+          "name": "2x3",
+          "latitude": 30.513415,
+          "longitude": 114.410787
+        },
+        {
+          "route": null,
+          "name": "2x4",
+          "latitude": 30.513709,
+          "longitude": 114.410062
+        },
+        {
+          "route": [
+            2
+          ],
+          "name": "汉口银行",
+          "latitude": 30.513753,
+          "longitude": 114.407955
+        },
+        {
+          "route": [
+            2
+          ],
+          "name": "紫菘",
+          "latitude": 30.513509928385417,
+          "longitude": 114.40578314887152
+        }
+      ],
+      "oppositePoints": [
+        {
+          "route": [
+            2
+          ],
+          "name": "紫菘",
+          "latitude": 30.513509928385417,
+          "longitude": 114.40578314887152
+        },
+        {
+          "route": [
+            2
+          ],
+          "name": "汉口银行",
+          "latitude": 30.513753,
+          "longitude": 114.407955
+        },
+        {
+          "route": null,
+          "name": "2x4",
+          "latitude": 30.513709,
+          "longitude": 114.410062
+        },
+        {
+          "route": null,
+          "name": "2x3",
+          "latitude": 30.513415,
+          "longitude": 114.410787
+        },
+        {
+          "route": [
+            2
+          ],
+          "name": "科技楼",
+          "latitude": 30.513319227430557,
+          "longitude": 114.41211371527778
+        },
+        {
+          "route": null,
+          "name": "1x2",
+          "latitude": 30.513295,
+          "longitude": 114.412619
+        },
+        {
+          "route": null,
+          "name": "1x3",
+          "latitude": 30.513105,
+          "longitude": 114.414746
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "大活",
+          "latitude": 30.514513,
+          "longitude": 114.414904
+        },
+        {
+          "route": null,
+          "name": "1x4",
+          "latitude": 30.514905,
+          "longitude": 114.41497
+        },
+        {
+          "route": null,
+          "name": "1x5",
+          "latitude": 30.515963,
+          "longitude": 114.415096
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "集贸",
+          "latitude": 30.515866,
+          "longitude": 114.415844
+        },
+        {
+          "route": null,
+          "name": "1x6",
+          "latitude": 30.515737,
+          "longitude": 114.417595
+        },
+        {
+          "route": null,
+          "name": "1x7",
+          "latitude": 30.515553,
+          "longitude": 114.419479
+        },
+        {
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "喻园",
+          "latitude": 30.515367,
+          "longitude": 114.42115
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "华科大社区站",
+          "latitude": 30.51515,
+          "longitude": 114.42302
+        },
+        {
+          "route": null,
+          "name": "1x8",
+          "latitude": 30.514792,
+          "longitude": 114.426251
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "东九",
+          "latitude": 30.514675,
+          "longitude": 114.427155
+        },
+        {
+          "route": [
+            1,
+            2
+          ],
+          "name": "韵苑",
+          "latitude": 30.514082,
+          "longitude": 114.432318
+        }
+      ],
+      "color": "#40D6BD",
+      "parts": [
+        {
+          "isDot": false,
+          "begin": "韵苑",
+          "end": "喻园"
+        },
+        {
+          "isDot": false,
+          "begin": "喻园",
+          "end": "2x2"
+        },
+        {
+          "isDot": false,
+          "begin": "2x2",
+          "end": "紫菘"
+        }
+      ],
+      "oppositeParts": [
+        {
+          "isDot": false,
+          "begin": "紫菘",
+          "end": "1x3"
+        },
+        {
+          "isDot": true,
+          "begin": "1x3",
+          "end": "1x7"
+        },
+        {
+          "isDot": false,
+          "begin": "1x7",
+          "end": "韵苑"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "points": [
+        {
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "喻园",
+          "latitude": 30.515367,
+          "longitude": 114.42115
+        },
+        {
+          "route": null,
+          "name": "1x6",
+          "latitude": 30.515737,
+          "longitude": 114.417595
+        },
+        {
+          "route": null,
+          "name": "3x1",
+          "latitude": 30.516679,
+          "longitude": 114.417673
+        },
+        {
+          "route": [
+            3
+          ],
+          "name": "校医院",
+          "latitude": 30.516934950086807,
+          "longitude": 114.41510172526041
+        },
+        {
+          "route": [
+            3
+          ],
+          "name": "西二路口站",
+          "latitude": 30.517313,
+          "longitude": 114.411298
+        },
+        {
+          "route": null,
+          "name": "3x2",
+          "latitude": 30.516318,
+          "longitude": 114.411134
+        },
+        {
+          "route": [
+            3,
+            4
+          ],
+          "name": "高层小区",
+          "latitude": 30.516482,
+          "longitude": 114.408519
+        },
+        {
+          "route": null,
+          "name": "3x3",
+          "latitude": 30.515456,
+          "longitude": 114.408202
+        },
+        {
+          "route": null,
+          "name": "3x5",
+          "latitude": 30.515229,
+          "longitude": 114.41104
+        },
+        {
+          "route": [
+            3
+          ],
+          "name": "院士楼",
+          "latitude": 30.514418,
+          "longitude": 114.410935
+        },
+        {
+          "route": null,
+          "name": "2x3",
+          "latitude": 30.513415,
+          "longitude": 114.410787
+        },
+        {
+          "route": [
+            2,
+            3
+          ],
+          "name": "科技楼",
+          "latitude": 30.513319227430557,
+          "longitude": 114.41211371527778
+        },
+        {
+          "route": null,
+          "name": "1x2",
+          "latitude": 30.513295,
+          "longitude": 114.412619
+        },
+        {
+          "route": [
+            1,
+            3
+          ],
+          "name": "图书馆",
+          "latitude": 30.512005,
+          "longitude": 114.412451
+        },
+        {
+          "route": null,
+          "name": "1x1",
+          "latitude": 30.509374,
+          "longitude": 114.412238
+        },
+        {
+          "route": [
+            1,
+            3,
+            4
+          ],
+          "name": "校大门",
+          "latitude": 30.509439,
+          "longitude": 114.412133
+        }
+      ],
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+
+
+      
+   
+      "color": "#FAC54B",
+      "parts": [
+        {
+          "isDot": true,
+          "begin": "韵苑",
+          "end": "1x6"
+        },
+        {
+          "isDot": false,
+          "begin": "1x6",
+          "end": "3x1"
+        },
+        {
+          "isDot": false,
+          "begin": "3x1",
+          "end": "3x3"
+        },
+        {
+          "isDot": false,
+          "begin": "3x3",
+          "end": "2x3"
+        },
+        {
+          "isDot": true,
+          "begin": "2x3",
+          "end": "校大门"
+        }
+      ],
+      "oppositeParts": null
+    },
+    {
+      "id": 4,
+      "points": [
+        {
+          "route": [
+            4
+          ],
+          "name": "南三门站",
+          "latitude": 30.509219,
+          "longitude": 114.408467
+        },
+        {
+          "route": null,
+          "name": "4x1",
+          "latitude": 30.508693,
+          "longitude": 114.408511
+        },
+        {
+          "route": null,
+          "name": "4x2",
+          "latitude": 30.508952,
+          "longitude": 114.41025
+        },
+        {
+          "route": null,
+          "name": "4x3",
+          "latitude": 30.50955,
+          "longitude": 114.410315
+        },
+        {
+          "route": [
+            1,
+            3,
+            4
+          ],
+          "name": "校大门",
+          "latitude": 30.509439,
+          "longitude": 114.412133
+        },
+        {
+          "route": null,
+          "name": "1x1",
+          "latitude": 30.509374,
+          "longitude": 114.412238
+        },
+        {
+          "route": null,
+          "name": "4x4",
+          "latitude": 30.511231,
+          "longitude": 114.412463
+        },
+        {
+          "route": [
+            4
+          ],
+          "name": "东二站",
+          "latitude": 30.511036,
+          "longitude": 114.414789
+        },
+        {
+          "route": [
+            4
+          ],
+          "name": "中心操场",
+          "latitude": 30.510767,
+          "longitude": 114.418102
+        },
+        {
+          "route": null,
+          "name": "4x6",
+          "latitude": 30.510547,
+          "longitude": 114.420768
+        },
+        {
+          "route": [
+            4
+          ],
+          "name": "沁苑",
+          "latitude": 30.510651,
+          "longitude": 114.42082
+        },
+        {
+          "route": [
+            4
+          ],
+          "name": "博士公寓",
+          "latitude": 30.513383,
+          "longitude": 114.42112
+        },
+        {
+          "route": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "喻园",
+          "latitude": 30.515367,
+          "longitude": 114.42115
+        },
+        {
+          "route": null,
+          "name": "喻园适配点",
+          "latitude": 30.515366,
+          "longitude": 114.42114
+        },
+        {
+          "route": [
+            1,
+            2,
+            4
+          ],
+          "name": "集贸",
+          "latitude": 30.515866,
+          "longitude": 114.415844
+        },
+        {
+          "route": [
+            4
+          ],
+          "name": "幼儿园站",
+          "latitude": 30.516052,
+          "longitude": 114.413198
+        },
+        {
+          "route": [
+            3,
+            4
+          ],
+          "name": "高层小区",
+          "latitude": 30.516482,
+          "longitude": 114.408519
+        },
+        {
+          "route": null,
+          "name": "4x8",
+          "latitude": 30.515507,
+          "longitude": 114.408305
+        },
+        {
+          "route": null,
+          "name": "4x9",
+          "latitude": 30.515594,
+          "longitude": 114.407211
+        },
+        {
+          "route": [
+            4
+          ],
+          "name": "西区超市",
+          "latitude": 30.514728,
+          "longitude": 114.407395
+        },
+        {
+          "route": null,
+          "name": "4x10",
+          "latitude": 30.513744,
+          "longitude": 114.40754
+        },
+        {
+          "route": [
+            3,
+            4
+          ],
+          "name": "南三门站",
+          "latitude": 30.509219,
+          "longitude": 114.408467
+        },
+        {
+          "route": null,
+          "name": "南三门站适配点",
+          "latitude": 30.509218,
+          "longitude": 114.408466
+        }
+      ],
+      "oppositePoints": null,
+      "color": "#f09490",
+      "parts": [
+        {
+          "isDot": false,
+          "begin": "南三门站",
+          "end": "校大门"
+        },
+        {
+          "isDot": true,
+          "begin": "校大门",
+          "end": "4x4"
+        },
+        {
+          "isDot": false,
+          "begin": "4x4",
+          "end": "喻园适配点"
+        },
+        {
+          "isDot": false,
+          "begin": "喻园适配点",
+          "end": "4x8"
+        },
+        {
+          "isDot": false,
+          "begin": "4x8",
+          "end": "南三门站适配点"
+        }
+      ],
+      "oppositeParts": null
+    }
+  ],
+  "error": "",
+  "success": true
+}

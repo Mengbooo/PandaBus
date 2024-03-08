@@ -1,0 +1,13 @@
+/*export const BASE = "https://hustbus.hust.online/api/v1";*/
+export const BASE = "https://api.hust.online/hustbus/api/v1";
+export const ROUTE = "/route";
+export const STATION = "/station";
+export const BUS = "/bus";
+export const LINE = "/line";
+export const ALL_BUS = "/bus/all";
+export const GET_NOTICE_ALL = "/notice/all";
+export const GET_ITEM_ALL = "/lostproperty/all";
+export const GET_ITEM_ID = "/lostproperty/id";
+export const NEAREST_STATION = "/visitor";
+export const CALL_BUS = '/bus/alert';
+export const CALL_BUS_WAIT = '/bus/waiting'
