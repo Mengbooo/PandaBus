@@ -1,4 +1,3 @@
-
 <template>
     <div class="app-container">
         <div style="background-color: #ffffff;">
@@ -7,7 +6,7 @@
     </div>
     <loading v-if="showLoading" />
 </template>
- 
+
 <style scoped>
 #container {
     width: 100dvw;
@@ -92,7 +91,7 @@ const fetchVehicleLocations = () => {
 
             // 添加点标记
             vehicleData.forEach((vehicle) => {
-                let {  lat, lon, direct } = vehicle;
+                let { lat, lon, direct } = vehicle;
                 let position = [lon, lat];
 
                 // 根据方向选择对应的车辆图标
@@ -172,7 +171,6 @@ const fetchVehicleLocations = () => {
                     collision: true,
                     size: [50, 50],
                 });
-
                 map.add(marker0);
                 markers.push(marker0);
 
@@ -286,65 +284,67 @@ onMounted(() => {
                         }
 
                         const path1 = [];
-                        lineData[i].oppositePoints.forEach(oppositePoint => {
-                            path1.push(new AMap.LngLat(oppositePoint.longitude, oppositePoint.latitude));
-                            if (oppositePoint.route != null) {
-                                if (i == 0) {
-                                    let marker1 = new AMap.Marker({
-                                        position: [oppositePoint.longitude, oppositePoint.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img1,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker1);
-                                } else if (i == 1) {
-                                    let marker2 = new AMap.Marker({
-                                        position: [oppositePoint.longitude, oppositePoint.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img2,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker2);
-                                } else if (i == 2) {
-                                    let marker3 = new AMap.Marker({
-                                        position: [oppositePoint.longitude, oppositePoint.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img3,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker3);
-                                } else if (i == 3) {
-                                    let marker4 = new AMap.Marker({
-                                        position: [oppositePoint.longitude, oppositePoint.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img4,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker4);
-                                }
 
-                            }
-                        });
+                            lineData[i].oppositePoints.forEach(oppositePoint => {
+                                path1.push(new AMap.LngLat(oppositePoint.longitude, oppositePoint.latitude));
+                                if (oppositePoint.route != null) {
+                                    if (i == 0) {
+                                        let marker1 = new AMap.Marker({
+                                            position: [oppositePoint.longitude, oppositePoint.latitude],
+                                            icon: new AMap.Icon({
+                                                image: img1,
+                                                imageSize: [10, 10],
+                                                imageOffset: new AMap.Pixel(0, 0),
+                                            }),
+                                            offset: new AMap.Pixel(-5, -5),
+                                            collision: true,
+                                            size: [15, 15],
+                                        });                         
+                                        map.add(marker1);
+                                    } else if (i == 1) {
+                                        let marker2 = new AMap.Marker({
+                                            position: [oppositePoint.longitude, oppositePoint.latitude],
+                                            icon: new AMap.Icon({
+                                                image: img2,
+                                                imageSize: [10, 10],
+                                                imageOffset: new AMap.Pixel(0, 0),
+                                            }),
+                                            offset: new AMap.Pixel(-5, -5),
+                                            collision: true,
+                                            size: [15, 15],
+                                        });
+                                        map.add(marker2);
+                                    } else if (i == 2) {
+                                        let marker3 = new AMap.Marker({
+                                            position: [oppositePoint.longitude, oppositePoint.latitude],
+                                            icon: new AMap.Icon({
+                                                image: img3,
+                                                imageSize: [10, 10],
+                                                imageOffset: new AMap.Pixel(0, 0),
+                                            }),
+                                            offset: new AMap.Pixel(-5, -5),
+                                            collision: true,
+                                            size: [15, 15],
+                                        });
+                                        map.add(marker3);
+                                    } else if (i == 3) {
+                                        let marker4 = new AMap.Marker({
+                                            position: [oppositePoint.longitude, oppositePoint.latitude],
+                                            icon: new AMap.Icon({
+                                                image: img4,
+                                                imageSize: [10, 10],
+                                                imageOffset: new AMap.Pixel(0, 0),
+                                            }),
+                                            offset: new AMap.Pixel(-5, -5),
+                                            collision: true,
+                                            size: [15, 15],
+                                        });
+                                        map.add(marker4);
+                                    }
+
+                                }
+                            });
+                        
                         var polyline1 = new AMap.Polyline({
                             path: path1,
                             strokeWeight: 7,
