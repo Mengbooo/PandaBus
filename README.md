@@ -31,8 +31,8 @@
 ”*
 ## 示例图：
 <figure>
-![image](https://github.com/Mengbooo/PandaBus/assets/143786942/b25ed8ea-b584-48d3-b96b-8c6fb459d8ab)
-![image](https://github.com/Mengbooo/PandaBus/assets/143786942/e17e9034-543b-47c2-bc02-89b77f869f72)
-![image](https://github.com/Mengbooo/PandaBus/assets/143786942/9b9b7905-cc29-45a6-9c2e-0cc845e5e19c)
+<img src="https://github.com/Mengbooo/PandaBus/assets/143786942/b25ed8ea-b584-48d3-b96b-8c6fb459d8ab">
+<img src="https://github.com/Mengbooo/PandaBus/assets/143786942/e17e9034-543b-47c2-bc02-89b77f869f72">
+<img src="https://github.com/Mengbooo/PandaBus/assets/143786942/9b9b7905-cc29-45a6-9c2e-0cc845e5e19c">
 </figure>
 
