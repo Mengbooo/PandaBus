@@ -241,6 +241,7 @@ export default {
     border-radius: 3dvw;
     margin-left: 15dvw;
     z-index: 3;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .changebtn img {
@@ -447,6 +448,8 @@ export default {
     width: 25dvw;
     height: 6dvh;
     border-radius: 15dvw;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .refreshbtn img {
