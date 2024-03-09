@@ -10,7 +10,9 @@
 <img src="https://github.com/Mengbooo/PandaBus/assets/143786942/9eba0947-c0ee-46a3-80bf-60ee31b646dd" width="300px">
 <img src="https://github.com/Mengbooo/PandaBus/assets/143786942/08c244ec-1788-4796-abc5-39c1ab515cbd" width="300px">
 </center>
+
 ---
+
 ## 目前亟待解决的问题：
 - 把Iposition给push到了markers的数组，导致用户的位置会和校车一样，15s后删除旧的图标然后add一个新的图标，这样就实现不了实时跟踪。高德的实时跟踪需要采用猎鹰JDK，但是这个JDK只能用在Android和Ios上（）
 - 当我从Homeview跳到Aboutview时，会报一个并不影响功能的错误，但是看着很不爽，后面再去问问怎么修改：<img width="200px" src="https://github.com/Mengbooo/PandaBus/assets/143786942/b007a277-6126-41de-838b-790ef6b54739">
