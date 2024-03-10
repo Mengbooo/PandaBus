@@ -80,6 +80,40 @@ watch(() => props.rotated, (newRotated) => {
     }
 });
 const fetchVehicleLocations = () => {
+    AMap.plugin("AMap.Geolocation", () => {
+        var geolocation = new AMap.Geolocation({
+            enableHighAccuracy: true,
+            timeout: 10000,
+            useNative: true,
+        });
+        geolocation.getCurrentPosition((status, result) => {
+            // console.log(status)//获取用户当前的精确位置
+            if (status == "complete") {
+                // 但是它的经度有点离谱，定位到成都了？maybe电脑端原因
+                // 2/13 回老家测了一遍，定位又非常准确
+                let Iposition = result.position;
+                // console.log(Iposition)
+                let marker0 = new AMap.Marker({
+                    position: [Iposition.lng, Iposition.lat],
+                    icon: new AMap.Icon({
+                        image: img0,
+                        imageSize: [20, 20],
+                        imageOffset: new AMap.Pixel(0, 0),
+                    }),
+                    offset: new AMap.Pixel(-5, -5),
+                    collision: true,
+                    size: [50, 50],
+                });
+                //为啥这里会偶尔报错？
+                map.add(marker0);
+                markers.push(marker0);
+
+            }
+            else {
+                console.log('geolocation error')
+            }
+        })
+    })
     axios.get('https://api.hust.online/hustbus/api/v1/bus/all')
         .then((response) => {
             let vehicleData = response.data.data;
@@ -147,39 +181,7 @@ const fetchVehicleLocations = () => {
             }
         });
 
-    AMap.plugin("AMap.Geolocation", () => {
-        var geolocation = new AMap.Geolocation({
-            enableHighAccuracy: true,
-            timeout: 10000,
-            useNative: true,
-        });
-        geolocation.getCurrentPosition((status, result) => {
-            // console.log(status)//获取用户当前的精确位置
-            if (status == "complete") {
-                // 但是它的经度有点离谱，定位到成都了？maybe电脑端原因
-                // 2/13 回老家测了一遍，定位又非常准确
-                let Iposition = result.position;
-                // console.log(Iposition)
-                let marker0 = new AMap.Marker({
-                    position: [Iposition.lng, Iposition.lat],
-                    icon: new AMap.Icon({
-                        image: img0,
-                        imageSize: [20, 20],
-                        imageOffset: new AMap.Pixel(0, 0),
-                    }),
-                    offset: new AMap.Pixel(-5, -5),
-                    collision: true,
-                    size: [50, 50],
-                });
-                map.add(marker0);
-                markers.push(marker0);
 
-            }
-            else {
-                console.log('geolocation error')
-            }
-        })
-    })
 
 }
 onMounted(() => {
@@ -209,65 +211,27 @@ onMounted(() => {
                     // console.log(lineData)
                     for (let i = props.startIndex; i < props.lineDataLength; i++) {
                         const path = [];
+                        const markerIcons = [img1, img2, img3, img4];
+
                         lineData[i].points.forEach(point => {
                             path.push(new AMap.LngLat(point.longitude, point.latitude));
-                            if (point.route != null) {
-                                if (i == 0) {
-                                    let marker1 = new AMap.Marker({
-                                        position: [point.longitude, point.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img1,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker1);
-                                } else if (i == 1) {
-                                    let marker2 = new AMap.Marker({
-                                        position: [point.longitude, point.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img2,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker2);
-                                } else if (i == 2) {
-                                    let marker3 = new AMap.Marker({
-                                        position: [point.longitude, point.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img3,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker3);
-                                } else if (i == 3) {
-                                    let marker4 = new AMap.Marker({
-                                        position: [point.longitude, point.latitude],
-                                        icon: new AMap.Icon({
-                                            image: img4,
-                                            imageSize: [10, 10],
-                                            imageOffset: new AMap.Pixel(0, 0),
-                                        }),
-                                        offset: new AMap.Pixel(-5, -5),
-                                        collision: true,
-                                        size: [15, 15],
-                                    });
-                                    map.add(marker4);
-                                }
 
+                            if (point.route != null && i < 4) {
+                                let marker = new AMap.Marker({
+                                    position: [point.longitude, point.latitude],
+                                    icon: new AMap.Icon({
+                                        image: markerIcons[i],
+                                        imageSize: [10, 10],
+                                        imageOffset: new AMap.Pixel(0, 0),
+                                    }),
+                                    offset: new AMap.Pixel(-5, -5),
+                                    collision: true,
+                                    size: [15, 15],
+                                });
+                                map.add(marker);
                             }
                         });
+
                         var polyline = new AMap.Polyline({
                             path: path,
                             strokeWeight: 7,
@@ -278,73 +242,33 @@ onMounted(() => {
                         map.add(polyline);
                     }
                     for (let i = props.startIndex; i < props.lineDataLength; i++) {
-                        //由于第三条线路的oppositePoint为null，导致切换线路功能会在line3出现报错，故重写了下本地的json文件，后面再看情况修改代码
                         if (i === 2) {
                             continue;
                         }
 
                         const path1 = [];
+                        const markerIcons = [img1, img2, img3, img4];
+                        const oppositePoints = lineData[i].oppositePoints;
 
-                            lineData[i].oppositePoints.forEach(oppositePoint => {
-                                path1.push(new AMap.LngLat(oppositePoint.longitude, oppositePoint.latitude));
-                                if (oppositePoint.route != null) {
-                                    if (i == 0) {
-                                        let marker1 = new AMap.Marker({
-                                            position: [oppositePoint.longitude, oppositePoint.latitude],
-                                            icon: new AMap.Icon({
-                                                image: img1,
-                                                imageSize: [10, 10],
-                                                imageOffset: new AMap.Pixel(0, 0),
-                                            }),
-                                            offset: new AMap.Pixel(-5, -5),
-                                            collision: true,
-                                            size: [15, 15],
-                                        });                         
-                                        map.add(marker1);
-                                    } else if (i == 1) {
-                                        let marker2 = new AMap.Marker({
-                                            position: [oppositePoint.longitude, oppositePoint.latitude],
-                                            icon: new AMap.Icon({
-                                                image: img2,
-                                                imageSize: [10, 10],
-                                                imageOffset: new AMap.Pixel(0, 0),
-                                            }),
-                                            offset: new AMap.Pixel(-5, -5),
-                                            collision: true,
-                                            size: [15, 15],
-                                        });
-                                        map.add(marker2);
-                                    } else if (i == 2) {
-                                        let marker3 = new AMap.Marker({
-                                            position: [oppositePoint.longitude, oppositePoint.latitude],
-                                            icon: new AMap.Icon({
-                                                image: img3,
-                                                imageSize: [10, 10],
-                                                imageOffset: new AMap.Pixel(0, 0),
-                                            }),
-                                            offset: new AMap.Pixel(-5, -5),
-                                            collision: true,
-                                            size: [15, 15],
-                                        });
-                                        map.add(marker3);
-                                    } else if (i == 3) {
-                                        let marker4 = new AMap.Marker({
-                                            position: [oppositePoint.longitude, oppositePoint.latitude],
-                                            icon: new AMap.Icon({
-                                                image: img4,
-                                                imageSize: [10, 10],
-                                                imageOffset: new AMap.Pixel(0, 0),
-                                            }),
-                                            offset: new AMap.Pixel(-5, -5),
-                                            collision: true,
-                                            size: [15, 15],
-                                        });
-                                        map.add(marker4);
-                                    }
+                        oppositePoints.forEach(oppositePoint => {
+                            path1.push(new AMap.LngLat(oppositePoint.longitude, oppositePoint.latitude));
 
-                                }
-                            });
-                        
+                            if (oppositePoint.route != null && i < 4) {
+                                let marker = new AMap.Marker({
+                                    position: [oppositePoint.longitude, oppositePoint.latitude],
+                                    icon: new AMap.Icon({
+                                        image: markerIcons[i],
+                                        imageSize: [10, 10],
+                                        imageOffset: new AMap.Pixel(0, 0),
+                                    }),
+                                    offset: new AMap.Pixel(-5, -5),
+                                    collision: true,
+                                    size: [15, 15],
+                                });
+                                map.add(marker);
+                            }
+                        });
+
                         var polyline1 = new AMap.Polyline({
                             path: path1,
                             strokeWeight: 7,
