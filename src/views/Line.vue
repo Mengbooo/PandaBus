@@ -157,7 +157,7 @@ export default {
         }
     },
     components: {
-        Amap
+        Amap,
     },
     computed: {
         pointsWithRoute() {
