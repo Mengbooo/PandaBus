@@ -286,8 +286,8 @@ onMounted(() => {
 
             // 首次加载时调用获取车辆位置数据的函数
             fetchVehicleLocations();
-            // 设置定时器，每隔 10 秒更新一次位置数据
-            refreshTimer = setInterval(fetchVehicleLocations, 10000);
+            // 设置定时器，每隔 15 秒更新一次位置数据
+            refreshTimer = setInterval(fetchVehicleLocations, 15000);
         });
 })
 
