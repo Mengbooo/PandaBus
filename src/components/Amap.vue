@@ -252,7 +252,6 @@ onMounted(() => {
 
                         oppositePoints.forEach(oppositePoint => {
                             path1.push(new AMap.LngLat(oppositePoint.longitude, oppositePoint.latitude));
-
                             if (oppositePoint.route != null && i < 4) {
                                 let marker = new AMap.Marker({
                                     position: [oppositePoint.longitude, oppositePoint.latitude],
