@@ -71,15 +71,15 @@ let busimg3 = require('../assets/img/busEast.png')
 let markers = [];
 watch(() => props.selectedPoint, (newPoint) => {
     if (newPoint !== null) {
-        fetchVehicleLocations();
+        fetchLocations();
     }
 });
 watch(() => props.rotated, (newRotated) => {
     if (newRotated) {
-        fetchVehicleLocations();
+        fetchLocations();
     }
 });
-const fetchVehicleLocations = () => {
+const fetchLocations = () => {
     AMap.plugin("AMap.Geolocation", () => {
         var geolocation = new AMap.Geolocation({
             enableHighAccuracy: true,
@@ -88,6 +88,7 @@ const fetchVehicleLocations = () => {
         });
         geolocation.getCurrentPosition((status, result) => {
             // console.log(status)//获取用户当前的精确位置
+
             if (status == "complete") {
                 // 但是它的经度有点离谱，定位到成都了？maybe电脑端原因
                 // 2/13 回老家测了一遍，定位又非常准确
@@ -193,6 +194,8 @@ onMounted(() => {
         .then((AMap) => {
             nextTick(() => {
                 showLoading.value = false;
+                // 首次加载时调用获取车辆位置数据的函数
+                fetchLocations();
             });
             map = new AMap.Map("container", {
                 viewMode: "2D",
@@ -283,20 +286,19 @@ onMounted(() => {
                     console.log(e);
                 });
 
-            // 首次加载时调用获取车辆位置数据的函数
-            fetchVehicleLocations();
-            // 设置定时器，每隔 15 秒更新一次位置数据
-            refreshTimer = setInterval(fetchVehicleLocations, 15000);
+
+
         });
 })
 
+// 设置定时器，每隔 15 秒更新一次位置数据
+refreshTimer = setInterval(fetchLocations, 15000);
 // 地图聚焦 ~station
 let bigimg1 = require('../assets/img/bigDotBlue.png')
 let bigimg2 = require('../assets/img/bigDotGreen.png')
 let bigimg3 = require('../assets/img/bigDotYellow.png')
 let bigimg4 = require('../assets/img/bigDotPink.png')
 var previousMarker = null
-
 watch(() => props.selectedPoint, (newVal) => {
     if (newVal != null) {
         map.setZoomAndCenter(16, [newVal.longitude, newVal.latitude - 0.004], false, 2000);
